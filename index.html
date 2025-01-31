@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsNexus-Connecting You to the Pulse of the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logo.png">
+    <!-- font awsom link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div><img src="./logo.png" ></div>
+            <h3 style="margin-left: 6px;">NewsNexus</h3>
+        </div>
+        <div class="inputsearch desktop">
+            <form id="searchDesk">
+            <input type="text" placeholder="Try to search..." id="searchInputDesk" >
+            <span><i class="fa-solid fa-search" ></i></span>
+            </form>
+        </div>
+        <nav class="desktop">
+            <ul>
+                <li onclick="search(`ipl 2023`)">World</li>
+                <li onclick="search(`Business`)">Business</li>
+                <li onclick="search(`Sports`)">Sports</li>
+                <li onclick="search(`Entertainment`)">Entertainment</li>
+                <div style=" padding: 3px;"><i class="fa-solid fa-sun" id="theme-toggle"></i></div>
+                
+            </ul>
+        </nav>
+        <div class="menubtn">
+            <i class="fa-solid fa-bars " ></i>
+        </div>
+
+    <div class="mobile ">
+        <nav >
+            <ul>   
+                <li style="text-decoration: none "><i class="fa-solid fa-sun " id="theme-toggleMob" style="font-size: 22px "></i>   Dark / Light</li>
+                <li onclick="search(`World`)">World</li>
+                <li onclick="search(`Business`)">Business</li>
+                <li onclick="search(`Sports`)">Sports</li>
+                <li onclick="search(`Entertainment`)">Entertainment</li>
+                
+            </ul>
+        </nav>
+        <div class="inputsearch">
+           <form id="searchMob">
+            <input type="text" id="searchInputMob" placeholder="Try to search...">
+            <span><i class="fa-solid fa-search" ></i></span>
+        </div>
+        </form>
+    </div>
+    </header>
+
+    <!-- main -->
+     <main></main>
+     
+    <!-- Move to Top Button -->
+    <button id="topButton">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+     <!-- Footer  -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="./logo.png" alt="NewsNexus Logo">
+                <h3>NewsNexus</h3>
+                <p>Connecting You to the Pulse of the World</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li onclick="search(`World`)"><a href="#">World</a></li>
+                    <li onclick="search(`Business`)"><a href="#">Business</a></li>
+                    <li onclick="search(`Sports`)"><a href="#">Sports</a></li>
+                    <li onclick="search(`Entertainment`)"><a href="#">Entertainment</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="http://www.linkedin.com/in/hritik-verma-01984a292"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/Hritik_CodeHub?t=Z784SRfGn3b7C2jrXmdY_g&s=08 "><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 NewsNexus. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
