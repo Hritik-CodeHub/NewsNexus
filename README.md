@@ -26,6 +26,7 @@
    git clone https://github.com/your-username/NewsNexus.git
 2. Open index.html in a browser
    To fetch news, replace YOUR_API_KEY in script.js with your NewsAPI key
-🔗 Live Demo
+
+## **🔗 Live Demo**
 Visit NewsNexus (website link)
 
