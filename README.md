@@ -20,7 +20,7 @@
 
 ---
 ## **Snapshot**
-![image](![NewsNexus](https://github.com/user-attachments/assets/8e90e0ae-577c-420e-9726-fa2f0fe90b43)
+![image](![NewsNexus](https://github.com/user-attachments/assets/86b480ab-bb9a-4f72-b27e-6de6c2dd47a8)
 )
 
 ---
