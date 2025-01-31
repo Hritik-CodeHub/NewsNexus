@@ -19,7 +19,11 @@
 - **Icons:** Font Awesome  
 
 ---
+## **Snapshot**
+![image](![NewsNexus](https://github.com/user-attachments/assets/8e90e0ae-577c-420e-9726-fa2f0fe90b43)
+)
 
+---
 ## **🚀 How to Use**  
 1. Clone the repository:  
    ```sh
