@@ -2,9 +2,9 @@ const API_KEY = "506941840cba417cb82fa99307473dc2"
 const url="https://newsapi.org/v2/everything?q="
 
 async function fetchData(query) {
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`)
-    const data = await res.json()
-    return data
+    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+    const data = await res.json();
+    return data;
 }
 
 fetchData().then(data=> randerNews(data.articles))
@@ -13,12 +13,12 @@ let mobmenu=document.querySelector(".mobile");
 let menubtn=document.querySelector(".menubtn");
 menubtn.addEventListener("click",()=>{
     mobmenu.classList.toggle("unhiden")
-})
+});
 
 // rander news
 
 function randerNews(arr){
-    let htmlCard =``
+    let htmlCard =``;
     for(let i=0;i<arr.length;i++){
         if(arr[i].urlToImage){
         htmlCard+=`
@@ -36,33 +36,33 @@ function randerNews(arr){
           </div>
           </a>
         </div>
-`    }
+`    };
 }
-document.querySelector("main").innerHTML=htmlCard
+document.querySelector("main").innerHTML=htmlCard;
 
 }
 // nav-bar operations
 
-const searchBtn=document.getElementById("searchDesk")
-const searchBtnMob=document.getElementById("searchMob")
-const searchInpurMobile=document.getElementById("searchInputMob")
-const searchInput=document.getElementById("searchInputDesk")
+const searchBtn=document.getElementById("searchDesk");
+const searchBtnMob=document.getElementById("searchMob");
+const searchInpurMobile=document.getElementById("searchInputMob");
+const searchInput=document.getElementById("searchInputDesk");
 
 searchBtn.addEventListener("submit", async(e)=>{
-    e.preventDefault()
-    const data= await fetchData(searchInput.value)
-    randerNews(data.articles)
-})
+    e.preventDefault();
+    const data= await fetchData(searchInput.value);
+    randerNews(data.articles);
+});
 
 searchBtnMob.addEventListener("submit",async(e)=>{
-    e.preventDefault()
-    const data= await fetchData(searchInpurMobile.value)
-    randerNews(data.articles)
+    e.preventDefault();
+    const data= await fetchData(searchInpurMobile.value);
+    randerNews(data.articles);
 })
 
 async function search(query) {
-    const data =await fetchData(query)
-    randerNews(data.articles)
+    const data =await fetchData(query);
+    randerNews(data.articles);
 }
 
 
