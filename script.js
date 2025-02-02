@@ -4,10 +4,10 @@ const url="https://newsapi.org/v2/everything?q="
 async function fetchData(query) {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
     const data = await res.json();
-    return await data;
+    return  data;
 }
 
-fetchData().then(data=> randerNews(data.articles))
+fetchData("all").then(data=> randerNews(data.articles))
 
 let mobmenu=document.querySelector(".mobile");
 let menubtn=document.querySelector(".menubtn");
