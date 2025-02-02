@@ -1,13 +1,29 @@
-const API_KEY = "506941840cba417cb82fa99307473dc2"
-const url="https://newsapi.org/v2/everything?q="
+const API_KEY = "506941840cba417cb82fa99307473dc2";
+const url="https://newsapi.org/v2/everything?q=";
 
 async function fetchData(query) {
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-    const data = await res.json();
-    return  data;
+    try {
+        const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+        
+        if (!res.ok) {
+            throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+
+        const data = await res.json();
+        return data;
+    } catch (error) {
+        console.error("Fetch error:", error);
+        return null;
+    }
 }
 
-fetchData("all").then(data=> randerNews(data.articles))
+fetchData("all").then(data => {
+    if (data && data.articles) {
+        randerNews(data.articles);
+    } else {
+        console.error("No articles found:", data);
+    }
+});
 
 let mobmenu=document.querySelector(".mobile");
 let menubtn=document.querySelector(".menubtn");
@@ -15,7 +31,8 @@ menubtn.addEventListener("click",()=>{
     mobmenu.classList.toggle("unhiden")
 });
 
-// rander news
+
+// rander news Function
 
 function randerNews(arr){
     let htmlCard =``;
