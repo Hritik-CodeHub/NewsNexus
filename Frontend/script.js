@@ -1,5 +1,5 @@
 const API_KEY = "506941840cba417cb82fa99307473dc2";
-const url="http://localhost:5000/news?q=";
+const url="https://newsnexus-3q7g.onrender.com/news?q=";
 
 async function fetchData(query) {
     try {
