@@ -1,9 +1,8 @@
-const API_KEY = "506941840cba417cb82fa99307473dc2";
-const url="https://newsnexus-3q7g.onrender.com/news?q=";
+const url = "https://newsnexus-3q7g.onrender.com/news?q=";
 
 async function fetchData(query) {
     try {
-        const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+        const res = await fetch(`${url}${query}`);
         
         if (!res.ok) {
             throw new Error(`HTTP error! Status: ${res.status}`);
