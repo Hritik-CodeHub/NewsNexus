@@ -11,10 +11,11 @@ const API_KEY = process.env.NEWS_API_KEY; // Use from .env
 
 app.get("/news", async (req, res) => {
     const query = req.query.q || "india";
-    const url = `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`;
+    const url = `https://gnews.io/api/v4/search?q=${query}&apikey=${API_KEY}`;
     try {
         const response = await fetch(url);
         const data = await response.json();
+        console.log(data);
         res.json(data);
     } catch (err) {
         res.status(500).json({ message: "Server Error", error: err.message });
