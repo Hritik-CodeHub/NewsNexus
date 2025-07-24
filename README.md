@@ -5,7 +5,7 @@
 ---
 
 ## **🌟 Features**  
-✅ **Live News Updates** – Fetches real-time news from **NewsAPI**  
+✅ **Live News Updates** – Fetches real-time news from **Gnews API**  
 ✅ **Dark Mode & Light Mode** – User-friendly theme switching  
 ✅ **Category-Based News** – Browse news by World, Business, Sports, and Entertainment  
 ✅ **Search Functionality** – Find the news that matters to you  
@@ -27,5 +27,5 @@
 2. Open index.html in a browser
 
 ## **🔗 Live Project**
-Visit NewsNexus ([website link](https://thenewsnexus.netlify.app/))
+Visit NewsNexus ([Project link](https://thenewsnexus.netlify.app/))
 
